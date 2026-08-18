@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tic Tac Toe | Pro Game</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="game-container">
+
+        <header>
+            <h1>Tic <span>Tac</span> Toe</h1>
+            <p>Classic game with a modern experience</p>
+        </header>
+
+        <div class="mode-selector">
+            <button class="mode-btn active" data-mode="pvp">
+                👥 Player vs Player
+            </button>
+
+            <button class="mode-btn" data-mode="computer">
+                🤖 vs Computer
+            </button>
+        </div>
+
+        <div class="score-board">
+
+            <div class="score-card player-x">
+                <span class="player-symbol">X</span>
+                <h3>Player X</h3>
+                <strong id="scoreX">0</strong>
+            </div>
+
+            <div class="score-card draws">
+                <span class="player-symbol">=</span>
+                <h3>Draws</h3>
+                <strong id="drawScore">0</strong>
+            </div>
+
+            <div class="score-card player-o">
+                <span class="player-symbol">O</span>
+                <h3>Player O</h3>
+                <strong id="scoreO">0</strong>
+            </div>
+
+        </div>
+
+        <div class="status">
+            <span id="statusText">Player X's Turn</span>
+        </div>
+
+        <div class="board" id="board">
+
+            <button class="cell" data-index="0"></button>
+            <button class="cell" data-index="1"></button>
+            <button class="cell" data-index="2"></button>
+
+            <button class="cell" data-index="3"></button>
+            <button class="cell" data-index="4"></button>
+            <button class="cell" data-index="5"></button>
+
+            <button class="cell" data-index="6"></button>
+            <button class="cell" data-index="7"></button>
+            <button class="cell" data-index="8"></button>
+
+        </div>
+
+        <div class="winner-message" id="winnerMessage">
+            <div class="winner-box">
+                <div class="trophy">🏆</div>
+                <h2 id="winnerTitle">Player X Wins!</h2>
+                <p id="winnerDescription">Great game!</p>
+
+                <button id="nextGameBtn">
+                    Play Again
+                </button>
+            </div>
+        </div>
+
+        <div class="controls">
+            <button id="restartBtn" class="restart-btn">
+                🔄 Restart Game
+            </button>
+
+            <button id="resetScoreBtn" class="reset-btn">
+                🗑 Reset Score
+            </button>
+        </div>
+
+        <footer>
+            <p>Built with HTML • CSS • JavaScript</p>
+        </footer>
+
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
